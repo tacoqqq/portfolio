@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav,footer {
+    background-color: #ccc;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+footer {
+    padding: 24px 0;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-name {
+    padding-left: 10px;
+}
+
+.burger-menu {
+    display: inline-block;
+    width: 50px;
+}
+
+header {
+    padding: 15% 0;
+    min-height: 45vh;
+}
+
+.header-container {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+section {
+    padding: 5% 0;
+    background-color: #666;
+    min-height: 150px;
+}
+
+section:nth-child(even){
+    background-color: #aaa;
+}
+
+section p, .btn-container, .tech-used {
+    text-align: left;
+    padding: 0 8%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    display: block;
+    width: 40%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.img:nth-child(even){
+    border-left: none;
+}
+
+.tech-icon-container, .pro-icon-container, .social-icon-container {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+button {
+    padding: 10px;
+}
+
+.tech-icon, .pro-icon, .social-icon {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.pro-icon-container, .social-icon-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-icon {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
