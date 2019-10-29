@@ -26,7 +26,6 @@ footer {
     padding: 24px 0;
 }
 
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -39,6 +38,10 @@ footer {
 .burger-menu {
     display: inline-block;
     width: 50px;
+}
+
+.lg-screen-nav {
+    display: none;
 }
 
 header {
@@ -74,8 +77,8 @@ section p, .btn-container, .tech-used {
 
 .img {
     display: block;
-    width: 40%;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: 1px solid black;
 }
 
@@ -118,4 +121,32 @@ footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+/* Still working on media queries, not quite finished yet. */
+@media screen and (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .lg-screen-nav {
+        display: block;
+    }
+
+    .lg-screen-nav > ul {
+        list-style-type: none;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .lg-screen-nav > ul > li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .lg-screen-nav > ul > li:last-child {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
 }
