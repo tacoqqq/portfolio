@@ -236,6 +236,7 @@ section p, .btn-container, .tech-used {
     border-radius: 10px;
     margin: 2%;
     padding: 2%;
+    padding-bottom: 30px;
 }
 
 span, .ig-link {
