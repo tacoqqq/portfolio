@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>I&#39;m Daphne Fang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">   
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,7 +10,7 @@
 <body>
     <nav role="navigation">
         <div class="nav-container">
-            <p class="site-name">Daphne Fang</p>
+            <p class="site-name"><a href="">Daphne Fang</a></p>
             <div class="burger-menu-container">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -18,20 +18,30 @@
             </div>
             <div class="lg-screen-nav">
                 <ul>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#about-me-id">About Me</a></li>
+                    <li><a href="#my-portfolio-id">Projects</a></li>
+                    <li><a href="#contact-info-id">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main role="main">
-        <header role="banner">
+
+        <section class="menu-container hide-menu">
+            <ul class="menu">
+                <li class="menu-item"><a href="#home-id">Home</a></li>
+                <li class="menu-item"><a href="#about-me-id">About Me</a></li>
+                <li class="menu-item"><a href="#my-portfolio-id">Projects</a></li>
+                <li class="menu-item"><a href="#contact-info-id">Contact</a></li>
+            </ul>
+        </section>
+
+        <header role="banner" id="home-id">
             <div class="header-container">
                 <div class="hero-intro">
-                    <h1 class="heading">Hello World. I’m Daphne Fang.</h1>
-                    <h2 class="sub-heading">With a Fang, I don’t bite. I develop website, and I love to write.</h2>
-                    <button type="button" class="hero-btn">View My Projects ></button>
+                    <h1 class="heading">Hello World. I&#39;m Daphne Fang.</h1>
+                    <h2 class="sub-heading">With a Fang, I don&#39;t bite. I develop website, and I love to write.</h2>
+                    <button type="button" class="hero-btn"><a href="#my-portfolio-id">View My Projects ></a></button>
                 </div>
             </div>
         </header>
@@ -40,89 +50,130 @@
             <h2>For a brief...</h2>
             <div class="my-bio-flexbox content-box">
                 <div class="img-container">
-                    <div class="img-thumbnail"><img src="img/me/me-2.jpg" alt="my-photo"></div>
+                    <div class="img-thumbnail"><img src="img/me/me-2.jpg" alt="my profile photo"></div>
                 </div> 
-                <p>I am an aspiring, ever-growing web developer who is currently based in <span>the Greater Los Angeles Area</span>. To answer Marie Kondo’s question on what sparks my joy: a cup of coffee in the morning, fulfilling fitness training, and developing user-friendly and modern-designed websites that help solve people’s problems.</p>
-                <p>While pursuing a career in web development, my love for writing has never quenched. While not coding and learning new technological knowledge, I’m often found writing copies, blogging and running an IG account about snacks at <a href="https://www.instagram.com/midnighthangry/" target="_blank">@midnighthangry</a>.</p>
+                <div class="my-bio-description">
+                    <p>I am an aspiring, ever-growing web developer who is currently based in <span>the Greater Los Angeles Area</span>. To answer Marie Kondo&#39;s question on what sparks my joy: a cup of coffee in the morning, fulfilling fitness training, and developing user-friendly and modern-designed websites that help solve people&#39;s problems.</p>
+                    <p>While pursuing a career in web development, my love for writing has never quenched. While not coding and learning new technological knowledge, I&#39;m often found writing copies, blogging and running an IG account about snacks at <a class="ig-link" href="https://www.instagram.com/midnighthangry/" target="_blank">@midnighthangry</a>.</p>
+                </div>
                 <div class="btn-container">
-                    <button class="first-btn">About Me ></button>
-                    <button class="second-btn">Email Me > </button>
+                    <button class="first-btn"><a href="#about-me-id">About Me ></a></button>
+                    <button class="second-btn"><a href="mailto:daphneys.fang@gmail.com?Subject=Hello%20there" target="_top">Email Me ></a></button>
                 </div>
             </div>
         </section>
 
-        <section class="about-me">
+        <section class="about-me" id="about-me-id">
             <h2>More About Me</h2>
             <h3>Different Daphne. Same Daphne.</h3>
             <div class="content-box">
                 <div class="img-container">
-                    <div class="img-thumbnail"><img src="img/me/me-4.jpg" alt="my-photo"></div>
-                    <div class="img-thumbnail"><img src="img/me/me-9.jpg" alt="my-photo"></div>
+                    <div class="img-thumbnail"><img src="img/me/me-4.jpg" alt="my photo"></div>
+                    <div class="img-thumbnail"><img src="img/me/me-9.jpg" alt="my photo"></div>
                 </div>
                 <div class="outer-role-container">
                     <div class="role-container">
                         <p class="title">Front-end Developer</p>
                         <p class="lang">Languages I code: HTML, CSS, Javascript, Slim</p>
                         <p class="tool">Tools I wield: Visual Studio Code, Sublime Text, Bootstrap, Git, Github, Terminal</p>
-                        <p class="role-intro">Learning is a lifelong journey, and this motto encourages me to start learning web-development at the age of 30. I enjoy bringing ideas to life in the browser, and am addicted to the problem-solving process that eventually make things work. As modern web design has opened to more users in different conditions, I expect my work can achieve the greatest accessibility and always hold true to that core value.</p>
+                        <p class="role-intro">Learning is a lifelong journey, and this motto encourages me to start learning web-development at the age of 30. I enjoy bringing ideas to life in the browser, and am addicted to the problem-solving process that eventually make things work. As modern web design has opened more doors to more users in different conditions, I expect my work can achieve the greatest accessibility and always hold true to that core value.</p>
                     </div>
                     <div class="role-container">
                         <p class="title">Digital Marketer</p>
                         <p class="tool">Tools I wield: Google Analytics, Google Ads, Facebook Ad Manager, Ahrefs, SimilarWeb, Canva</p>
-                        <p class="role-intro">The work experience in digital marketing is the cornerstone that triggers my interest in web development. As a senior digital marketer, I develop and practice holistic digital marketing strategies including SEM (SEO & PPC), Social Media Marketing, Affiliate Marketing, Leads Generation and Content Marketing based on Google Analytics and Facebook Ads Manager data monitoring and interpretation in order to grow active users and sales revenue in successful result.</p>
+                        <p class="role-intro">The work experience in digital marketing is the cornerstone that triggers my interest in web development. As a senior digital marketer, I develop and practice holistic digital marketing strategies including SEM (SEO & PPC), Social Media Marketing, Affiliate Marketing, Leads Generation and Content Marketing based on Google Analytics and Facebook Ads Manager data monitoring and interpretation in order to grow active users and sales revenue in successful result.</p>
                     </div>
                     <div class="role-container">
                         <p class="title">Front-end Developer</p>
                         <p class="lang">Languages I write: English, Chinese</p>
                         <p class="tool">Tools I wield: Visual Studio Code, Sublime Text, Bootstrap, Git, Github, Terminal</p>
-                        <p class="role-intro">There are times that words speak louder than actions, and that’s why I always have a soft spot for writing. With 5 years of experience in copywriting, I have written tailored press release and branding story for different industries including fashion, local restaurants, coffee shops and technology start-ups that helps the business to reach more potential customers.</p>
+                        <p class="role-intro">There are times that words speak louder than actions, and that is why I always have a soft spot for writing. With 5 years of experience in copywriting, I have written tailored press release and branding story for different industries including fashion, local restaurants, coffee shops and technology start-ups that helps the business to reach more potential customers.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>My Portfolio Section</h2>
+        <section class="my-portfolio" id="my-portfolio-id">
+            <h2>My Portfolio</h2>
             <div class="my-portfolio-flexbox">
-                <div class="img-container">
-                    <div class="img">img 1</div>
-                </div>
                 <div class="my-portfolio-intro">
-                    <p>Project Name</p>
+                    <p class="title">The U.S. Citizenship Practice Test</p>
+                    <div class="img-container">
+                        <div class="img-thumbnail"><a href="https://tacoqqq.github.io/quiz-app/" target="_blank"><img src="img/hero-img/quiz-app-hero.png" alt="quiz app screenshot"></a></div>
+                    </div>
                     <div class="tech-used">Technologies Used: 
                         <ul class="tech-icon-container">
-                            <li class="tech-icon">tech-icon-1</li>
-                            <li class="tech-icon">tech-icon-2</li>
+                            <li class="tech-icon"><img src="img/logos/html5-logo.png" alt="html5"></li>
+                            <li class="tech-icon"><img src="img/logos/css3-logo.png" alt="css3"></li>
+                            <li class="tech-icon"><img src="img/logos/javascript-logo.png" alt="js"></li>
+                            <li class="tech-icon"><img src="img/logos/jquery-logo.jpg" alt="jquery"></li>
                         </ul>
                     </div>
-                    <p>Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid explicabo ea ipsa quos, earum quas corrupti suscipit, nostrum minus eligendi velit eaque impedit modi tenetur fuga quia? Nisi, iste minima.</p>
+                    <p>This web app serves as a study tool that ask questions about U.S. history and government. It helps new immigrants to better prepare for the naturalization test in order to become a U.S. citizen. </p>
+                    <div class="btn-container">
+                        <button class="first-btn"><a href="https://tacoqqq.github.io/quiz-app/" target="_blank">Live Demo</a></button>
+                        <button class="second-btn"><a href="https://github.com/tacoqqq/quiz-app" target="_blank">Repo</a></button>
+                    </div>
                 </div>         
-                <div class="btn-container">
-                    <button class="first-btn">First Button</button>
-                    <button class="second-btn">Second Button</button>
-                </div>
+                <div class="my-portfolio-intro">
+                    <p class="title">A Brief Note on My Wedding</p>
+                    <div class="img-container">
+                        <div class="img-thumbnail"><a href="https://tacoqqq.github.io/wedding-photo-gallery/" target="_blank"><img src="img/hero-img/wedding-photo-gallery-hero.png" alt="wedding photo gallery screenshot"></a></div>
+                    </div>
+                    <div class="tech-used">Technologies Used: 
+                        <ul class="tech-icon-container">
+                            <li class="tech-icon"><img src="img/logos/html5-logo.png" alt="html5"></li>
+                            <li class="tech-icon"><img src="img/logos/css3-logo.png" alt="css3"></li>
+                            <li class="tech-icon"><img src="img/logos/javascript-logo.png" alt="js"></li>
+                            <li class="tech-icon"><img src="img/logos/bootstrap-logo.png" alt="bootstrap"></li>
+                        </ul>
+                    </div>
+                    <p>After I held my wedding in June 2019, I have designed and implemented this page to reminisce about the major life event of mine by including the top 8 of my favorite wedding photos.</p>
+                    <div class="btn-container">
+                        <button class="first-btn"><a href="https://tacoqqq.github.io/wedding-photo-gallery/" target="_blank">Live Demo</a></button>
+                        <button class="second-btn"><a href="https://github.com/tacoqqq/wedding-photo-gallery" target="_blank">Repo</a></button>
+                    </div>
+                </div>  
+                <div class="my-portfolio-intro">
+                    <p class="title">Website Revamp RWD Mock-up</p>
+                    <div class="img-container">
+                        <div class="img-thumbnail"><a href="https://tacoqqq.github.io/farm-rd/" target="blank"><img src="img/hero-img/farm-rd-hero.png" alt="farm rd screenshot"></a></div>
+                    </div>
+                    <div class="tech-used">Technologies Used: 
+                        <ul class="tech-icon-container">
+                            <li class="tech-icon"><img src="img/logos/html5-logo.png" alt="html5"></li>
+                            <li class="tech-icon"><img src="img/logos/css3-logo.png" alt="css3"></li>
+                            <li class="tech-icon"><img src="img/logos/responsive-design-logo.png" alt="rwd"></li>
+                        </ul>
+                    </div>
+                    <p>This is a responsive website mock-up for an agricultural association business website revamp project.                    </p>
+                    <div class="btn-container">
+                        <button class="first-btn"><a href="https://tacoqqq.github.io/farm-rd/" target="_blank">Live Demo</a></button>
+                        <button class="second-btn"><a href="https://github.com/tacoqqq/farm-rd" target="_blank">Repo</a></button>
+                    </div>
+                </div>  
             </div>
         </section>
 
-        <section>
-            <h2>Contact Info Section</h2>
-            <div class="content-box">
+        <section id="contact-info-id">
+            <h2>Contact Info</h2>
+            <div class="contact-box">
                 <div class="pro-contact">
-                    <p class="pro-contact-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="pro-contact-p">Know the professional side of me:</p>
                     <div>
                         <ul class="pro-icon-container">
-                            <li class="pro-icon">pro-icon-1</li>
-                            <li class="pro-icon">pro-icon-2</li>
-                            <li class="pro-icon">pro-icon-3</li>
+                            <li class="pro-icon"><a href="https://www.linkedin.com/in/daphneysfang" target="_blank"><img src="img/logos/Linkedin-logo.png" alt="linkedin"></li></a>
+                            <li class="pro-icon"><a href="https://github.com/tacoqqq" target="_blank"><img src="img/logos/github-logo.png" alt="github"></li></a>
+                            <li class="pro-icon"><a href="mailto:daphneys.fang@gmail.com?Subject=Hello%20there" target="_top"><img src="img/logos/email-icon-logo.png" alt="email"></li></a>
                         </ul>
                     </div>
                 </div>
                 <div class="social-contact">
-                    <p class="social-contact-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="social-contact-p">See the social side of me:</p>
                     <div>
                         <ul class="social-icon-container">
-                            <li class="social-icon">social-icon-1</li>
-                            <li class="social-icon">social-icon-2</li>
+                            <li class="social-icon"><a href="https://www.instagram.com/midnighthangry/" target="_blank"><img src="img/logos/instagram-logo.png" alt="instagram"></li></a>
+                            <li class="social-icon"><a href="https://www.facebook.com/daphne.fang.9?ref=bookmarks" target="_blank"><img src="img/logos/facebook-logo.png" alt="facebook"></li></a>
                         </ul>
                     </div>
                 </div> 
@@ -132,11 +183,16 @@
     </main>
     <footer role="content-info">
         <ul>
-            <li class="footer-icon">footer-icon-1</li>
-            <li class="footer-icon">footer-icon-2</li>
-            <li class="footer-icon">footer-icon-3</li>
-            <p>2019 Copyright</p>
+            <li class="footer-icon"><a href="https://www.linkedin.com/in/daphneysfang" target="_blank"><img src="img/logos/Linkedin-logo.png" alt="linkedin"></li></a>
+            <li class="footer-icon"><a href="https://github.com/tacoqqq" target="_blank"><img src="img/logos/github-logo.png" alt="github"></li></a>
+            <li class="footer-icon"><a href="mailto:daphneys.fang@gmail.com?Subject=Hello%20there" target="_top"><img src="img/logos/email-icon-logo.png" alt="email"></li></a>
+            <p>Copyright &copy; 2019 Daphne Fang</p>
         </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" >var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow27.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+
 </body>
 </html>
