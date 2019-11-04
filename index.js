@@ -8,6 +8,7 @@ function changeButton(){
 
 }
 
+//close the mobile menu
 function clearMobileMenu(){
     $('.menu-item').click(function(){
         $('.burger-menu-container').toggleClass('change');
@@ -15,11 +16,27 @@ function clearMobileMenu(){
     })
 }
 
+//Add smooth scrolling to all links
+function smoothScroll(){
+    $('a').on('click',function(event){
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+        }
+    });
+}
+
 
 
 $(changeButton);
 $(clearMobileMenu);
-
+$(smoothScroll);
 
 
 
