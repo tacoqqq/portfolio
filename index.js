@@ -1,7 +1,7 @@
 //click on the burger menu, change button style to "X"
 function changeButton(){
 //listen to the click
-  $('.burger-menu-container').click( function() {
+  $('.burger-menu-container').click( function(event) {
         $(this).toggleClass('change');
         $('.menu-container').fadeToggle().toggleClass('hide-menu');
   });
@@ -10,7 +10,7 @@ function changeButton(){
 
 //close the mobile menu
 function clearMobileMenu(){
-    $('.menu-item').click(function(){
+    $('.menu-item').click( function(event){
         $('.burger-menu-container').toggleClass('change');
         $('.menu-container').fadeToggle().toggleClass('hide-menu');        
     })
@@ -37,6 +37,5 @@ function smoothScroll(){
 $(changeButton);
 $(clearMobileMenu);
 $(smoothScroll);
-
 
 
