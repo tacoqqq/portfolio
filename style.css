@@ -150,6 +150,17 @@ header {
     color: #555;
 }
 
+section h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.lang, .tool {
+    font-weight: 800;
+    color: black;
+}
+
 
 .hero-btn {
     padding: 0;
