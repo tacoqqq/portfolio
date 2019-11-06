@@ -79,6 +79,8 @@ footer {
     position: fixed;
     width: 100%;
     height: 100%;
+    background-color: rgb(55,80,92);
+    padding-top: 80px;
 }
 
 
@@ -129,7 +131,6 @@ header {
     background-image: url('img/bg/bg-photo-1.jpeg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
 }
 
 .hero-intro {
@@ -143,6 +144,7 @@ header {
     text-transform: uppercase;
     font-size: 36px;
     color: #333;
+    line-height: 1.8;
 }
 
 .sub-heading {
@@ -167,10 +169,11 @@ section h2 {
     border: none;
 }
 
-.hero-btn a {
+a.hero-btn  {
     text-decoration: none;
     display: block;
-    width: 100%;
+    width: 180px;
+    margin: 0 auto;
     padding: 10px 8px;
     background-color: #fff;
     color: #37505C;
@@ -178,7 +181,7 @@ section h2 {
     transition: background-color 200ms ease-in, color 200ms ease-in, border 200ms ease-in;
 }
 
-.hero-btn a:hover {
+a.hero-btn:hover {
     background-color: #37505C;
     color: #fff;
     border: 1px solid #fff;
@@ -219,11 +222,6 @@ section p, .btn-container, .tech-used {
 .img-thumbnail img {
     display: block;
     width: 100%;
-    box-shadow: 5px 5px rgba(225,225,225,0.5);
-}
-
-.img:nth-child(even){
-    border-left: none;
 }
 
 .my-portfolio .img-thumbnail {
@@ -243,6 +241,7 @@ span, .ig-link {
     color: #F76F8E;
     text-decoration: none;
     transition: text-decoration 200ms ease-in;
+    background-color: beige;
 }
 
 .title {
@@ -251,6 +250,7 @@ span, .ig-link {
     font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: white;
 }
 
 .tech-icon-container, .pro-icon-container, .social-icon-container {
@@ -279,18 +279,19 @@ span, .ig-link {
     border: none;
 }
 
-.first-btn a, .second-btn a {
+a.first-btn , a.second-btn {
     text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 10px 8px;
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    padding: 8px 6px;
     background-color: #fff;
     color: #37505C;
     border: 1px solid #37505C;
     transition: background-color 200ms ease-in, color 200ms ease-in, border 200ms ease-in;
 }
 
-.first-btn a:hover, .second-btn a:hover {
+a.first-btn:hover, a.second-btn:hover {
     background-color: #37505C;
     color: #fff;
     border: 1px solid #fff;
@@ -321,6 +322,32 @@ footer ul {
 }
 
 
+@media screen and (max-width: 320px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero-intro {
+        padding: 10%;
+        margin: 5% auto 0;
+    }
+    
+    
+    .heading {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 28px;
+        color: #333;
+    }
+    
+    .sub-heading {
+        font-size: 16px;
+        color: #555;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
     
     main {
@@ -335,6 +362,11 @@ footer ul {
         height: 95vh;
     }
 
+    .hero-intro {
+        padding: 10%;
+        margin: 10px auto 0;
+    }
+    
 
     .burger-menu-container {
         display: none;
@@ -377,7 +409,6 @@ footer ul {
     .img-thumbnail img {
         display: block;
         width: 100%;
-        box-shadow: 5px 5px rgba(225,225,225,0.5);
     }   
     .btn-container {
         padding: 0;
@@ -403,6 +434,12 @@ footer ul {
         align-items: center;
     }
 
+    .img-container {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
 }
 
@@ -412,13 +449,8 @@ footer ul {
     }
 
     .role-container {
-        border-right: 1px solid #ccc;
         width: 33%;
         margin: 0 auto;
-    }
-
-    .role-container:nth-child(3){
-        border-right: none;
     }
 
     .my-portfolio-flexbox {

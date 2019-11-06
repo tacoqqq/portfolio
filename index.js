@@ -33,9 +33,22 @@ function smoothScroll(){
 }
 
 
+//animate my photo in the about-me section
+function changePhoto(){
+  let images = ['img/me/me-4.jpg','img/me/me-9.jpg'];
+  let i = 0;
+  setInterval(function(){
+    $('#change-photo').attr('src', images[i]);
+    i = i + 1;
+    if (i == images.length){
+      i = 0;
+    }
+  }, 1500);
+}
+
 
 $(changeButton);
 $(clearMobileMenu);
 $(smoothScroll);
-
+$(changePhoto);
 
