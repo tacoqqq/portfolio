@@ -159,6 +159,7 @@ section h2 {
 
 
 .lang, .tool {
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: black;
 }
@@ -238,15 +239,16 @@ section p, .btn-container, .tech-used {
 }
 
 span, .ig-link {
-    color: #F76F8E;
+    color: #A71D31;
     text-decoration: none;
     transition: text-decoration 200ms ease-in;
-    background-color: beige;
+    background-color: rgb(245,245,220);
+    padding: 2px;
 }
 
 .title {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F76F8E;
+    background-color: #A71D31;
     font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -342,6 +344,7 @@ footer ul {
     }
     
     .sub-heading {
+        font-family: 'Raleway', sans-serif;
         font-size: 16px;
         color: #555;
     }
