@@ -131,7 +131,7 @@ header {
     background-image: url('img/bg/bg-photo-1.jpeg');
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 450px;
 }
 
 .hero-intro {
@@ -365,9 +365,8 @@ footer ul {
     }
 
     header {
-
         background-position: bottom;
-        height: 95vh;
+        height: 90vh;
     }
 
     .hero-intro {
@@ -378,7 +377,7 @@ footer ul {
     .heading {
         font-size: 36px;
         line-height: 1.8;
-        margin: 2% 0;
+        margin: 0;
         margin-bottom: 1%;
     }
     
