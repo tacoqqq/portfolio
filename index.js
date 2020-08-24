@@ -46,9 +46,23 @@ function changePhoto(){
   }, 1500);
 }
 
+//'click to see more' will toggle class and diplsay the second part of projects
+function displaySecond(){
+  $('.see-more-btn').on('click', function(event){
+    event.preventDefault();
+    $('#second').toggleClass('hide')
+
+    if (!$('#second').hasClass('hide')){
+      $('html, body').animate({
+        scrollTop: $("#second").offset().top - 50
+      }, 500);
+    }
+  })
+}
 
 $(changeButton);
 $(clearMobileMenu);
 $(smoothScroll);
 $(changePhoto);
+$(displaySecond);
 

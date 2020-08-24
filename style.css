@@ -2,7 +2,6 @@
     box-sizing: border-box;
   }
 
-
 body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -173,6 +172,7 @@ section h2 {
 .hero-btn {
     padding: 0;
     border: none;
+    border-radius: 50px;
 }
 
 a.hero-btn  {
@@ -214,6 +214,10 @@ section p, .btn-container, .tech-used {
     padding: 0 8%;
 }
 
+.tech-used {
+    position: relative;
+}
+
 .img-container {
     display: flex;
     justify-content: center;
@@ -243,6 +247,10 @@ section p, .btn-container, .tech-used {
     padding-bottom: 30px;
 }
 
+.transparent {
+    background: rgba(225,225,225,0.2);   
+}
+
 span, .ig-link {
     color: #A71D31;
     text-decoration: none;
@@ -267,6 +275,12 @@ span, .ig-link {
   align-items: flex-end;
 }
 
+.tech-icon-container {
+    position: relative;
+    top: 10px;
+
+}
+
 .tech-used ul {
     display: inline-block;
     vertical-align: center;
@@ -284,6 +298,7 @@ span, .ig-link {
 .first-btn, .second-btn {
     padding: 0;
     border: none;
+    border-radius: 50px;
 }
 
 a.first-btn , a.second-btn {
@@ -337,6 +352,40 @@ footer ul {
   transform: scale(1.1);
 }
 
+.my-portfolio-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 33%;
+}
+
+.img-thumbnail img {
+    width: 100%;
+    display: block;
+}
+
+.see-more-btn {
+    margin: 5px;   
+    background-color: #A71D31;
+    border: 1px solid #A71D31;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.see-more-btn:hover {
+    background-color: #37505C;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.hide {
+    display: none;
+}
 
 @media screen and (max-width: 320px) {
 
@@ -348,7 +397,6 @@ footer ul {
         padding: 10%;
         margin: 5% auto 0;
     }
-    
     
     .heading {
         font-family: 'Open Sans', sans-serif;
@@ -462,6 +510,9 @@ footer ul {
     .role-container {
         width: 33%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
     }
 
     .my-bio-flexbox {
@@ -485,7 +536,7 @@ footer ul {
     }
 
     .my-portfolio-flexbox {
-        display: flex; 
+        display: flex;
         align-items: stretch;
         margin: 20px;
     }
@@ -502,6 +553,10 @@ footer ul {
     .tech-used, .my-portfolio-intro p {
         padding-left: 6px;
         padding-right: 6px;
+    }
+
+    .hide {
+        display: none;
     }
 
 }
