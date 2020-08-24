@@ -53,10 +53,17 @@ function displaySecond(){
     $('#second').toggleClass('hide')
 
     if (!$('#second').hasClass('hide')){
+      $(this).text('Click To See Less')
       $('html, body').animate({
         scrollTop: $("#second").offset().top - 50
-      }, 500);
+      }, 500) 
+    } else {
+      $(this).text('Click To See More')
+      $('html, body').animate({
+        scrollTop: $("#first").offset().top - 50
+      }, 500) 
     }
+
   })
 }
 
