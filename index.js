@@ -73,3 +73,5 @@ $(smoothScroll);
 $(changePhoto);
 $(displaySecond);
 
+
+
